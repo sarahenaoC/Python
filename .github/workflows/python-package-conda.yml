@@ -1,0 +1,59 @@
+
+
+from pickle import STRING
+print("Asignacion Vacaciones \n")
+nombre = len(input("¿Cúal es tu nombre?: ") )
+antiguedad = int(input("¿Cúal es tu angtiguedad en el trabajo?: " + ""))
+
+print("\n Claves de departamentos: \n")
+print("Digita 1 si eres del departamento de Atencion al cliente")
+print("Digita 2 si eres del departamento Logıstica")
+print("Digita 3 si eres del departamento Gerencia\n")
+
+opcion = int(input("¿cual es tu clave de departamento?:"))
+
+if opcion == 1:
+    print("\n Tu departamento es de Atencion al cliente: \n")
+
+
+
+    if  antiguedad == 1:
+        print("Tienes 6 diás de vacaciones")
+    elif  antiguedad >= 2 and antiguedad <= 6:
+        print("Tienes 14 diás de vacaciones")
+    elif antiguedad >= 7:
+        print("Tienes 20 diás de vacaciones")
+    else:
+        print("No tienes vaciones")
+
+elif opcion == 2:
+    print("\n Tu departamento es de Logıstica: \n")
+
+
+
+    if  antiguedad == 1:
+        print("Tienes 7 diás de vacaciones")
+    elif  antiguedad >= 2 and antiguedad <= 6:
+        print("Tienes 15 diás de vacaciones")
+    elif antiguedad >= 7:
+        print("Tienes 22 diás de vacaciones")
+    else:
+        print("No tienes vaciones")
+
+elif opcion == 3:
+    print("\n Tu departamento es de Gerencia: \n")
+
+
+    if  antiguedad == 1:
+        print("Tienes 10 diás de vacaciones")
+    elif  antiguedad >= 2 and antiguedad <= 6:
+        print("Tienes 20 diás de vacaciones")
+    elif antiguedad >= 7:
+        print("Tienes 30 diás de vacaciones")
+    else:
+        print("No tienes vaciones")
+
+else:
+        print("No existe")
+
+print("Fin.")
